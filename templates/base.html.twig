@@ -44,10 +44,25 @@
             </div>
           </li> #}
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          <ul class="navbar-nav">
+              {% if is_granted('ROLE_USER') %}
+                <li>
+                  <div class="nav-link disabled">
+                    <i class="fas fa-user"></i>
+                    {% if app.user %}
+                      <strong>{{ app.user.username }}</strong>
+                    {% endif %}
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link" href="{{ path('app_logout') }}">{{'Logout'|trans}}</a>
+                </li>
+              {% else %}
+                <li>
+                  <a class="nav-link" href="{{ path('app_login') }}">{{'Sign in'|trans}}</a>
+                </li>
+              {% endif %}
+            </ul>
       </div>
     </nav>
 
