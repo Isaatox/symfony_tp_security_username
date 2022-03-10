@@ -4683,10 +4683,6 @@ tbody.collapse.show {
   text-decoration: underline;
 }
 
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none;
-}
-
 .breadcrumb-item.active {
   color: #6c757d;
 }
@@ -5751,7 +5747,7 @@ button.close {
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
 .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-width: 0 0.5rem 0.5rem;
 }
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
@@ -5788,7 +5784,7 @@ button.close {
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
 .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
-  border-width: 0.5rem 0rem 0.5rem 0.5rem;
+  border-width: 0 0.5rem 0.5rem;
 }
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
