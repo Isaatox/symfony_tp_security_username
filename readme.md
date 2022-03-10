@@ -1,0 +1,1 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/isaatox/symfony_tp_security_username/badge/master)](https://www.codefactor.io/repository/github/isaatox/symfony_tp_security_username/overview/master)
